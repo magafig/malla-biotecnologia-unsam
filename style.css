@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  background-color: #fefefe;
+  margin: 0;
+  padding: 1rem;
+}
+h1 {
+  text-align: center;
+}
+#filters {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#graph {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.node {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  width: 220px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.node[data-area="Química"] { background-color: #ffe0e0; }
+.node[data-area="Biología"] { background-color: #e0ffe0; }
+.node[data-area="Matemática"] { background-color: #e0e0ff; }
+.node[data-area="Física"] { background-color: #fff0e0; }
+.node[data-area="Tecnología"] { background-color: #f0e0ff; }
+.node[data-area="Sociales"] { background-color: #e0f7ff; }
+.node.aprobada {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
